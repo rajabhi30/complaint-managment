@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  background-color: rgb(0, 168, 224);
+}
+
+.header__girl-img,
+.header__laptop-img {
+  height: 100%;
+}
+
+.heading__main {
+  font-size: 50px;
+  color: rgb(0, 174, 255);
+  background-color: #fff;
+}
+.heading__secondary {
+  margin-left: 18%;
+  display: inline-block;
+  padding: 15px;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  background-color: yellow;
+}
+
+.main {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 16%;
+  padding: 10px;
+  background-color: rgb(220, 220, 220);
+}
+
+.main__nav--nav {
+  margin-top: 10px;
+  list-style: none;
+  border-top: 5px solid rgb(10, 34, 194);
+  border-bottom: 5px solid rgb(10, 34, 194);
+  background-color: rgb(0, 174, 255);
+}
+
+.main__user-details--box {
+  flex-basis: 80%;
+  padding: 20px 0;
+}
+.nav--link:link,
+.nav--link:visited {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+
+.nav--link:hover,
+.nav--link:active {
+  background-color: rgb(4, 121, 160);
+}
+
+.nav--heading {
+  text-align: center;
+  width: 100%;
+  padding: 5px 8px;
+  color: #fff;
+  background-color: slateblue;
+}
+.user-details--form {
+  background-color: rgb(211, 211, 211);
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.form--heading {
+  color: #fff;
+  background-color: rgb(92, 101, 109);
+  border: none;
+  text-decoration: none;
+  padding-left: 10px;
+}
+.form__group {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0 14px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-details__laber {
+  flex-basis: 40%;
+}
+
+.form__group label {
+}
+.main-details__input {
+  width: 50%;
+  height: 30px;
+}
+
+.main-details__input--text-area {
+  height: 80px;
+}
+
+.form__btn {
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: aqua;
+  border-radius: 500px;
+}
+
+.complain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.complain__owner-box {
+  width: 15%;
+  margin-right: 20px;
+}
+
+.owner__img {
+  border-radius: 50%;
+  width: 100%;
+}
+.owner__name {
+  color: rgb(46, 46, 46);
+  font-size: 14px;
+  margin-top: 10px;
+}
+.complain__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+}
+.complain__pera {
+  color: rgb(39, 39, 39);
+}
+.btn-read--more {
+  display: inline-block;
+  margin-top: 30px;
+  justify-self: end;
+}
+
+.complain--closed {
+  background-color: #fff;
+  width: 28%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.complain--closed .complain__owner-box {
+  text-align: center;
+  width: 100%;
+  height: 130px;
+}
+.complain--closed .owner__img {
+  height: 50%;
+  width: auto;
+}
+.row--box {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.complain--closed .complain__details {
+  text-align: center;
+  padding: 5px;
+}
+.complain--closed .btn-read--more:link,
+.complain--closed .btn-read--more:visited {
+  color: rgb(52, 157, 0);
+  margin-bottom: 40px;
+}
+
+.engineer__details {
+  width: 90%;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.engineer__img {
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.engineer__name {
+  margin-bottom: 10px;
+}
+.more--detail:link,
+.more--detail:visited {
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 1000px;
+  text-decoration: none;
+  background-color: rgb(4, 211, 46);
+}
+
+.more--detail:hover,
+.more--detail:active {
+  background-color: rgb(1, 133, 27);
+}
+viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Complaint Management System</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__girl-img"
+        src="/img/call-center-2505955_1920.jpg"
+        alt="girl working in call center"
+      />
+      <h1 class="heading__main">Complaint Management System</h1>
+      <img
+        class="header__laptop-img"
+        src="/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+        alt="girl working in call center"
+      />
+    </header>
+    <main class="main">
+      <nav class="main__nav">
+        <h3 class="heading-3 nav--heading">Admin Menu</h3>
+        <ul class="main__nav--nav">
+          <li class="main__nav--items">
+            <a href="./index.html" class="nav--link">Welcome, Administrator</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="./assign.html" class="nav--link">Assign Complaint</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="./view-complains.html" class="nav--link">View Complains</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="./view-closed-complains.html" class="nav--link"
+              >View colse complains</a
+            >
+          </li>
+          <li class="main__nav--items">
+            <a href="./enginner-details.html" class="nav--link"
+              >Engineer details</a
+            >
+          </li>
+          <li class="main__nav--items">
+            <a href="./customer-details.html" class="nav--link"
+              >Customer details</a
+            >
+          </li>
+          <li class="main__nav--items">
+            <a href="#" class="nav--link">Reports</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="#" class="nav--link">Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main__user-details--box">
+        <h2 class="heading__secondary">Edit Engineer Details - Admin View</h2>
+        <form action="" class="user-details--form">
+          <h3 class="form--heading">&#8756;Edit Engineer&#8756;</h3>
+
+          <div class="form__group">
+            <label class="main-details__laber" for="engg-name"
+              >Engg, Name</label
+            >
+            <input
+              type="text"
+              class="main-details__input"
+              name="engg-name"
+              id="engg-name"
+            />
+          </div>
+          <div class="form__group">
+            <label class="main-details__laber" for="engg-password"
+              >Password</label
+            >
+            <input
+              type="text"
+              class="main-details__input"
+              name="engg-password"
+              id="engg-password"
+            />
+          </div>
+          <div class="form__group">
+            <label class="main-details__laber" for="engg-add">Address</label>
+            <textarea
+              class="main-details__input main-details__input--text-area"
+              name="egg-add"
+              id="egg-add"
+            ></textarea>
+          </div>
+          <div class="form__group">
+            <label class="main-details__laber" for="Email">Email</label>
+            <input
+              type="email"
+              class="main-details__input"
+              name="engg-email"
+              id="engg-email"
+            />
+          </div>
+          <div class="form__group">
+            <button class="form__btn">submit your form</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

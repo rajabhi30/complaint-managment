@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Complaint Management System</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__girl-img"
+        src="/img/call-center-2505955_1920.jpg"
+        alt="girl working in call center"
+      />
+      <h1 class="heading__main">Complaint Management System</h1>
+      <img
+        class="header__laptop-img"
+        src="/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+        alt="girl working in call center"
+      />
+    </header>
+    <main class="main">
+      <nav class="main__nav">
+        <h3 class="heading-3 nav--heading">Admin Menu</h3>
+        <ul class="main__nav--nav">
+          <li class="main__nav--items">
+            <a href="./index.html" class="nav--link">Welcome, Administrator</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="./assign.html" class="nav--link">Assign Complaint</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="./view-complains.html" class="nav--link">View Complains</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="./view-closed-complains.html" class="nav--link"
+              >View close complains</a
+            >
+          </li>
+          <li class="main__nav--items">
+            <a href="./enginner-details.html" class="nav--link"
+              >Engineer details</a
+            >
+          </li>
+          <li class="main__nav--items">
+            <a href="./customer-details.html" class="nav--link"
+              >Customer details</a
+            >
+          </li>
+          <li class="main__nav--items">
+            <a href="#" class="nav--link">Reports</a>
+          </li>
+          <li class="main__nav--items">
+            <a href="#" class="nav--link">Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main__user-details--box">
+        <h2 class="heading__secondary">Assign complains - Admin View</h2>
+        <form action="" class="user-details--form">
+          <h3 class="form--heading">&#8756;Assign Complains&#8756;</h3>
+
+          <div class="form__group">
+            <label class="main-details__laber" for="engg-name"
+              >Engg, Name</label
+            >
+            <input
+              type="text"
+              class="main-details__input"
+              name="engg-name"
+              id="engg-name"
+              placeholder="Please Enter Your Name Here"
+            />
+          </div>
+          <div class="form__group">
+            <label class="main-details__laber" for="Email">Email</label>
+            <input
+              type="email"
+              class="main-details__input"
+              name="engg-email"
+              id="engg-email"
+              placeholder="Please Enter Your Email here"
+            />
+          </div>
+          <div class="form__group">
+            <label class="main-details__laber" for="mobile">Mobile NO.</label>
+            <input
+              type="number"
+              class="main-details__input"
+              name="engg-number"
+              id="mobile"
+              placeholder="Please Ener Your Contact Info Here"
+            />
+          </div>
+          <div class="form__group">
+            <label class="main-details__laber" for="engg-add">Complain</label>
+            <textarea
+              class="main-details__input main-details__input--text-area"
+              name="egg-add"
+              id="egg-add"
+              placeholder="Please Enter About Your Complain Here"
+            ></textarea>
+          </div>
+          <div class="form__group">
+            <button class="form__btn">submit your form</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
